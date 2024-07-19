@@ -6,6 +6,8 @@ const { requireAuth , checkUser } = require('./middleware/authMiddleware');
 
 const app = express();
 
+app.use(cors());
+
 // middleware
 app.use(express.static('public'));
 app.use(express.json());
